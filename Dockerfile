@@ -1,6 +1,11 @@
 FROM norionomura/swift:base8
 MAINTAINER Norio Nomura <norio.nomura@gmail.com>
 
+RUN apt-get update && apt-get install -y \
+    libncurses5-dev python-pip && \
+    rm -r /var/lib/apt/lists/* && \
+    pip install numpy
+
 ENV SWIFT_BRANCH=swift-tensorflow \
     SWIFT_PLATFORM=ubuntu16.04 \
     SWIFT_VERSION=DEVELOPMENT-2018-04-26-a
