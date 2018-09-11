@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 
 ENV SWIFT_BRANCH=swift-tensorflow \
     SWIFT_PLATFORM=ubuntu16.04 \
-    SWIFT_VERSION=DEVELOPMENT-2018-09-05-a
+    SWIFT_VERSION=DEVELOPMENT-2018-09-09-a
 
 # Install Swift Ubuntu Snapshot
 RUN SWIFT_ARCHIVE_NAME=swift-tensorflow-$SWIFT_VERSION-$SWIFT_PLATFORM && \
